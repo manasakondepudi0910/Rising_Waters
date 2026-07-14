@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>FloodPredict AI</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/predict">Predict</a>
+    </div>
+</nav>
+
+<section class="predict-page">
+
+<div class="predict-box">
+
+<h1>Flood Prediction</h1>
+
+<p>
+Enter the weather information below.
+</p>
+
+<form method="POST" action="/predict">
+
+<label>Cloud Cover (%)</label>
+<input type="number" step="any" name="cloud" required>
+
+<label>Annual Rainfall (mm)</label>
+<input type="number" step="any" name="annual" required>
+
+<label>Jan-Feb Rainfall (mm)</label>
+<input type="number" step="any" name="janfeb" required>
+
+<label>Mar-May Rainfall (mm)</label>
+<input type="number" step="any" name="marmay" required>
+
+<label>Jun-Sep Rainfall (mm)</label>
+<input type="number" step="any" name="junsep" required>
+
+<button type="submit">
+Predict Flood
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+</html>

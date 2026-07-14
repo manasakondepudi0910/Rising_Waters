@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>No Flood Risk</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>FloodPredict AI</h2>
+
+<div>
+
+<a href="/">Home</a>
+
+<a href="/predict">Predict Again</a>
+
+</div>
+
+</nav>
+
+<section class="result-page">
+
+<div class="result-card safe">
+
+<div class="icon">✅</div>
+
+<h1>No Flood Risk</h1>
+
+<h3>Safe Conditions</h3>
+
+<p>
+
+Based on the rainfall and weather values entered, the model predicts
+that there is a very low probability of flooding.
+
+</p>
+
+<div class="buttons">
+
+<a href="/predict">
+<button>Predict Again</button>
+</a>
+
+<a href="/">
+<button>Home</button>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>

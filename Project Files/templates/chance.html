@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flood Alert</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>FloodPredict AI</h2>
+
+<div>
+
+<a href="/">Home</a>
+
+<a href="/predict">Predict Again</a>
+
+</div>
+
+</nav>
+
+<section class="result-page">
+
+<div class="result-card danger">
+
+<div class="icon">⚠️</div>
+
+<h1>Flood Alert</h1>
+
+<h3>High Flood Risk</h3>
+
+<p>
+
+The model predicts a high possibility of flooding.
+
+Please stay alert and follow official weather warnings.
+
+</p>
+
+<div class="buttons">
+
+<a href="/predict">
+<button>Predict Again</button>
+</a>
+
+<a href="/">
+<button>Home</button>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>
